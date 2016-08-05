@@ -42,9 +42,14 @@ exec $SHELL```
 c. ```echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bash_profile
 exec $SHELL```
 4. Make sure to logout and re-login here or the server will not recognize your rbenv commanbd!
-5. Install Ruby 
+5. Install Ruby and set the shells default version
 a. ``` rbenv install -v 2.3.1 ```
+b. ```rbenv global 2.3.1```
+c. Running the right Ruby? ```ruby -v```
+d. If you want to disable the gem log you can do so by running: ```echo "gem: --no-document" > ~/.gemrc```
+e. ```gem install bundler````
 6. Install rails 
-a. ```
+a. ```gem install rails -v 4.2.2``` #This was the stable relese when we began but you can now use 5.0!
+b. ```rbenv rehash```
 
 
