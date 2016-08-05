@@ -10,13 +10,14 @@ First we made a little shell script
 $ cd /
 $ mkdir backups
 $ cd backups
-$ vi fullserver.sh   (or nano or vim or whatever rocks your socks) In this file copy and paste this line:  
-tar -cvpf /backups/fullbackup.tar --exclude=proc --exclude=sys --exclude=dev/pts --exclude=backups .
+$ vi fullserver.sh   (or nano or vim or whatever rocks your socks)``` In this file copy and paste this line:  ```
+
 ```
 If you are curious about the details of what this line does, definitely checkout the link above. 
 
-
-
+Make the file an executable by running from the parent folder of backups/
+- ```chmod 750 /backups/fullserver.sh```
+- ```./backups/fullserver.sh```
 
 Once the snap shot was saved within the user of the digital ocean server that you have ssh keys configured for, you can copy it over to the desired machine. In my case, I just put it on the desktop using 
 ```scp -r user@digital.ocean.server.ip:/path/to/backups /home/your_user_name/Desktop/```
