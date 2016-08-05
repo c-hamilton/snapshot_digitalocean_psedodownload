@@ -25,7 +25,7 @@ After this, I had the entire tar file on my desktop (yikes its big!) and was abl
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ##Below I compiled the various tutorials I used on digital ocean:
 It was a pain to hunt down these sources each time I wanted to set up a new CentOS server with Rails
-0. Make a new droplet on Digital Ocean. Use the $50 off coupon provided to students in the [GitHub Student Developer](https://education.github.com/pack)
+- 0. Make a new droplet on Digital Ocean. Use the $50 off coupon provided to students in the [GitHub Student Developer](https://education.github.com/pack)
 - 1. Initial Server Set-up to create a non-root sudo user of the server
 - a. ```ssh root@SERVER_IP_ADDRESS```
 - b. ```adduser demo```
@@ -51,5 +51,9 @@ e. ```gem install bundler````
 - 6. Install rails 
 a. ```gem install rails -v 4.2.2``` #This was the stable relese when we began but you can now use 5.0!
 b. ```rbenv rehash```
-
+7. Install Node.js because it is required by key Rails features like the Asset Pipeline
+a. ```sudo yum -y install epel-release```
+b. ```sudo yum install nodejs```
+8. Clone your app using rails install
+9. 
 
