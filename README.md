@@ -5,6 +5,15 @@ In trying to download a snapshot of my digital ocean server to host myself, I fo
 
 I found a tutorial by <a href= "http://www.aboutdebian.com/tar-backup.htm"> KEITH PARKANSKY </a> on writing a little script using tar. I ran through this a few times while we were figuring what configs the server needed to run our Ruby on Rails web app for work,  which can be found <a href = "https://github.com/c-hamilton/hour_report.git"> here </a>. 
 
+First we made a little shell script
+>$ cd /
+>$ mkdir backups
+>$ cd backups
+>$ vi fullserver.sh   (or nano or vim or whatever rocks your socks) In this file copy and paste this line:  
+> tar -cvpf /backups/fullbackup.tar --exclude=proc --exclude=sys --exclude=dev/pts --exclude=backups .
+If you are curious about the details of what this line does, definitely checkout the link above. 
+
+
 
 
 Once the snap shot was saved within the user of the digital ocean server that you have ssh keys configured for, you can copy it over to the desired machine. In my case, I just put it on the desktop using <b>scp -r user@digital.ocean.server.ip:/path/to/backups /home/your_user_name/Desktop/ </b>
