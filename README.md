@@ -26,14 +26,14 @@ After this, I had the entire tar file on my desktop (yikes its big!) and was abl
 ##Below I compiled the various tutorials I used on digital ocean:
 It was a pain to hunt down these sources each time I wanted to set up a new CentOS server with Rails
 0. Make a new droplet on Digital Ocean. Use the $50 off coupon provided to students in the [GitHub Student Developer](https://education.github.com/pack)
-1. Initial Server Set-up to create a non-root sudo user of the server
-a. ```ssh root@SERVER_IP_ADDRESS```
-b. ```adduser demo```
-c. ```passwd demo```
-d. ```gpasswd -a demo wheel``` <-- this adds sudo priveledges to your non root user. Since we were not using our server for more than set-up, I skipped this.
-2. Install git because we all need git
+- 1. Initial Server Set-up to create a non-root sudo user of the server
+- a. ```ssh root@SERVER_IP_ADDRESS```
+- b. ```adduser demo```
+- c. ```passwd demo```
+- d. ```gpasswd -a demo wheel``` <-- this adds sudo priveledges to your non root user. Since we were not using our server for more than set-up, I skipped this.
+- 2. Install git because we all need git
 a. ```sudo yum install git```
-3. Install rbenv and Ruby Dependencies
+- 3. Install rbenv and Ruby Dependencies
 a. ```sudo yum install -y git-core zlib zlib-devel gcc-c++ patch readline readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison curl sqlite-devel```
 b. ```git clone git://github.com/sstephenson/rbenv.git .rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
@@ -41,14 +41,14 @@ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 exec $SHELL```
 c. ```echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bash_profile
 exec $SHELL```
-4. Make sure to logout and re-login here or the server will not recognize your rbenv commanbd!
-5. Install Ruby and set the shells default version
+- 4. Make sure to logout and re-login here or the server will not recognize your rbenv commanbd!
+- 5. Install Ruby and set the shells default version
 a. ``` rbenv install -v 2.3.1 ```
 b. ```rbenv global 2.3.1```
 c. Running the right Ruby? ```ruby -v```
 d. If you want to disable the gem log you can do so by running: ```echo "gem: --no-document" > ~/.gemrc```
 e. ```gem install bundler````
-6. Install rails 
+- 6. Install rails 
 a. ```gem install rails -v 4.2.2``` #This was the stable relese when we began but you can now use 5.0!
 b. ```rbenv rehash```
 
