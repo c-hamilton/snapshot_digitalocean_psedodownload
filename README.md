@@ -10,8 +10,9 @@ First we made a little shell script
 $ cd /
 $ mkdir backups
 $ cd backups
-$ vi fullserver.sh   (or nano or vim or whatever rocks your socks)``` In this file copy and paste this line:  ```
-
+$ vi fullserver.sh   (or nano or vim or whatever rocks your socks) 
+``` In this file copy and paste this line:  ```
+tar -cvpf /backups/fullbackup.tar --directory=/ --exclude=proc --exclude=sys --exclude=dev/pts --exclude=backups .
 ```
 If you are curious about the details of what this line does, definitely checkout the link above. 
 
