@@ -22,3 +22,22 @@ Once the snap shot was saved within the user of the digital ocean server that yo
 ```scp -r user@digital.ocean.server.ip:/path/to/backups /home/your_user_name/Desktop/```
 
 After this, I had the entire tar file on my desktop (yikes its big!) and was able to work with the IT guys to get it set up on our LAN. 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+1. Initial Server Set-up to create a non-root sudo user of the server
+a. ```ssh root@SERVER_IP_ADDRESS```
+b. ```adduser demo```
+c. ```passwd demo```
+d. ```gpasswd -a demo wheel``` <-- this adds sudo priveledges to your non root user. Since we were not using our server for more than set-up, I skipped this.
+2. Install git because we all need git
+a. ```sudo yum install git```
+3. Install rbenv and Ruby Dependencies
+a. sudo yum install -y git-core zlib zlib-devel gcc-c++ patch readline readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison curl sqlite-devel
+b. git clone git://github.com/sstephenson/rbenv.git .rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+exec $SHELL
+c. echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bash_profile
+exec $SHELL
+
+
