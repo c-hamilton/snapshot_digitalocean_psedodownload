@@ -23,6 +23,7 @@ Once the snap shot was saved within the user of the digital ocean server that yo
 
 After this, I had the entire tar file on my desktop (yikes its big!) and was able to work with the IT guys to get it set up on our LAN. 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+##Here I compiled the various tutorials I used on digital ocean because it was a pain to hunt them down each time I wanted to set up a new CentOS server with Rails
 
 1. Initial Server Set-up to create a non-root sudo user of the server
 a. ```ssh root@SERVER_IP_ADDRESS```
@@ -32,12 +33,14 @@ d. ```gpasswd -a demo wheel``` <-- this adds sudo priveledges to your non root u
 2. Install git because we all need git
 a. ```sudo yum install git```
 3. Install rbenv and Ruby Dependencies
-a. sudo yum install -y git-core zlib zlib-devel gcc-c++ patch readline readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison curl sqlite-devel
-b. git clone git://github.com/sstephenson/rbenv.git .rbenv
+a. ```sudo yum install -y git-core zlib zlib-devel gcc-c++ patch readline readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison curl sqlite-devel```
+b. ```git clone git://github.com/sstephenson/rbenv.git .rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-exec $SHELL
-c. echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bash_profile
-exec $SHELL
+exec $SHELL```
+c. ```echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bash_profile
+exec $SHELL```
+4. #### Make sure to logout and re-login here or the server will not recognize your rbenv commanbd!
+5. Install Ruby 
 
 
