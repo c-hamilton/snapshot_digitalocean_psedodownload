@@ -3,7 +3,7 @@ In trying to download a snapshot of my digital ocean server to host myself, I fo
 
 //Will write about how I set up my server here -- set up server to run a ruby on rails app
 
-I found a tutorial by <a href= "http://www.aboutdebian.com/tar-backup.htm"> KEITH PARKANSKY </a> on writing a little script using tar. I ran through this a few times while we were figuring what configs the server needed to run our Ruby on Rails which can be found <a href = "https://github.com/c-hamilton/hour_report.git"> here </a>. 
+I found a tutorial by <a href= "http://www.aboutdebian.com/tar-backup.htm"> KEITH PARKANSKY </a> on writing a little script using tar. I ran through this a few times while we were figuring what configs the server needed to run our Ruby on Rails web app for work,  which can be found <a href = "https://github.com/c-hamilton/hour_report.git"> here </a>. 
 
 
 
