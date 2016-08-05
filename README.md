@@ -18,6 +18,7 @@ If you are curious about the details of what this line does, definitely checkout
 
 
 
-Once the snap shot was saved within the user of the digital ocean server that you have ssh keys configured for, you can copy it over to the desired machine. In my case, I just put it on the desktop using <b>scp -r user@digital.ocean.server.ip:/path/to/backups /home/your_user_name/Desktop/ </b>
+Once the snap shot was saved within the user of the digital ocean server that you have ssh keys configured for, you can copy it over to the desired machine. In my case, I just put it on the desktop using 
+```scp -r user@digital.ocean.server.ip:/path/to/backups /home/your_user_name/Desktop/```
 
 After this, I had the entire tar file on my desktop (yikes its big!) and was able to work with the IT guys to get it set up on our LAN. 
