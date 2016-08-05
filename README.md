@@ -40,7 +40,7 @@ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 exec $SHELL```
 c. ```echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bash_profile
 exec $SHELL```
-4. #### Make sure to logout and re-login here or the server will not recognize your rbenv commanbd!
+### 4. Make sure to logout and re-login here or the server will not recognize your rbenv commanbd!
 5. Install Ruby 
 
 
