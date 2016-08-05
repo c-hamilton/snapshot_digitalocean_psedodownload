@@ -6,13 +6,13 @@ For information on inital set up of a Ruby on Rails app on a CentOS server see <
 I found a tutorial by <a href= "http://www.aboutdebian.com/tar-backup.htm"> KEITH PARKANSKY </a> on writing a little script using tar. I ran through this a few times while we were figuring what configs the server needed to run our Ruby on Rails web app for work,  which can be found <a href = "https://github.com/c-hamilton/hour_report.git"> here </a>. 
 
 First we made a little shell script
-'''
+<div>
 $ cd /
 $ mkdir backups
 $ cd backups
 $ vi fullserver.sh   (or nano or vim or whatever rocks your socks) In this file copy and paste this line:  
 tar -cvpf /backups/fullbackup.tar --exclude=proc --exclude=sys --exclude=dev/pts --exclude=backups .
-'''
+</div>
 If you are curious about the details of what this line does, definitely checkout the link above. 
 
 
