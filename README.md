@@ -23,7 +23,8 @@ Once the snap shot was saved within the user of the digital ocean server that yo
 
 After this, I had the entire tar file on my desktop (yikes its big!) and was able to work with the IT guys to get it set up on our LAN. 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-##Here I compiled the various tutorials I used on digital ocean because it was a pain to hunt them down each time I wanted to set up a new CentOS server with Rails
+##Below I compiled the various tutorials I used on digital ocean:
+It was a pain to hunt down these sources each time I wanted to set up a new CentOS server with Rails
 0. Make a new droplet on Digital Ocean. Use the $50 off coupon provided to students in the [GitHub Student Developer](https://education.github.com/pack)
 1. Initial Server Set-up to create a non-root sudo user of the server
 a. ```ssh root@SERVER_IP_ADDRESS```
