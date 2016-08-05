@@ -1,7 +1,7 @@
 # snapshot_digitalocean_psedodownload
 In trying to download a snapshot of my digital ocean server to host myself, I found out a) digital ocean does not support this and b) lots of people wanted this feature also. After figuring it out, I decided to compile the various tutorials I found so that others could do this also. If you have any feedback on other ways to do this, leave me a comment!
 
-//Will write about how I set up my server here -- set up server to run a ruby on rails app
+For information on inital set up of a Ruby on Rails app on a CentOS server see <a href = "https://www.digitalocean.com/community/tutorials/initial-server-setup-with-centos-7"> server setup </a> and <a href = "https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-centos-7"> rails set-up </a>.
 
 I found a tutorial by <a href= "http://www.aboutdebian.com/tar-backup.htm"> KEITH PARKANSKY </a> on writing a little script using tar. I ran through this a few times while we were figuring what configs the server needed to run our Ruby on Rails web app for work,  which can be found <a href = "https://github.com/c-hamilton/hour_report.git"> here </a>. 
 
