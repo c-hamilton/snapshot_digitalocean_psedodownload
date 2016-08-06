@@ -18,10 +18,11 @@ In this file copy and paste this line:
 tar -cvpf /backups/fullbackup.tar --directory=/ --exclude=proc --exclude=sys --exclude=dev/pts --exclude=backups .
 ```
 If you are curious about the details of what this line does, definitely checkout the link above. 
+
+Make the file an executable by running from the parent folder of backups/
 ```
 $ cd ..
 ```
-Make the file an executable by running from the parent folder of backups/
 - ```chmod 750 /backups/fullserver.sh```
 - ```./backups/fullserver.sh```
 
