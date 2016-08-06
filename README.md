@@ -11,11 +11,16 @@ $ cd /
 $ mkdir backups
 $ cd backups
 $ vi fullserver.sh   (or nano or vim or whatever rocks your socks) 
-``` In this file copy and paste this line:  ```
+``` 
+
+In this file copy and paste this line: 
+```
 tar -cvpf /backups/fullbackup.tar --directory=/ --exclude=proc --exclude=sys --exclude=dev/pts --exclude=backups .
 ```
 If you are curious about the details of what this line does, definitely checkout the link above. 
-
+```
+$ cd ..
+```
 Make the file an executable by running from the parent folder of backups/
 - ```chmod 750 /backups/fullserver.sh```
 - ```./backups/fullserver.sh```
